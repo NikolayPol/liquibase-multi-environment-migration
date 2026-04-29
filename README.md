@@ -49,3 +49,15 @@ mvn spring-boot:run
 ```bash
 mvn test
 ```
+
+## GitHub Actions
+
+CI workflow запускается на `push` и `pull_request` в `main`.
+
+Он:
+
+- поднимает `ubuntu-latest`;
+- делает checkout репозитория;
+- ставит Java 21 через `actions/setup-java@v4`;
+- кеширует Maven зависимости;
+- запускает `mvn test`.
