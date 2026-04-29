@@ -53,10 +53,10 @@ public class LiquibaseConfiguration {
         SpringLiquibase liquibase = new SpringLiquibase();
         liquibase.setDataSource(dataSource);
         liquibase.setChangeLog("classpath:db/changelog/integration-master.yaml");
-        liquibase.setDefaultSchema("INTERGRATION_APP");
-        liquibase.setLiquibaseSchema("INTERGRATION_LIQUIBASE");
-        liquibase.setDatabaseChangeLogTable("INTERGRATION_DATABASECHANGELOG");
-        liquibase.setDatabaseChangeLogLockTable("INTERGRATION_DATABASECHANGELOGLOCK");
+        liquibase.setDefaultSchema("INTEGRATION_APP");
+        liquibase.setLiquibaseSchema("INTEGRATION_LIQUIBASE");
+        liquibase.setDatabaseChangeLogTable("INTEGRATION_DATABASECHANGELOG");
+        liquibase.setDatabaseChangeLogLockTable("INTEGRATION_DATABASECHANGELOGLOCK");
         return liquibase;
     }
 }

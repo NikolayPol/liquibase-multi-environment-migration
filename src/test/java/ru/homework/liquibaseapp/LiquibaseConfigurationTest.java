@@ -36,9 +36,9 @@ class LiquibaseConfigurationTest {
 
     @Test
     void integrationLiquibaseUsesDedicatedSchemaAndChangelogTables() {
-        assertThat(tableExists(integrationJdbcTemplate, "INTERGRATION_LIQUIBASE", "INTERGRATION_DATABASECHANGELOG")).isTrue();
-        assertThat(tableExists(integrationJdbcTemplate, "INTERGRATION_LIQUIBASE", "INTERGRATION_DATABASECHANGELOGLOCK")).isTrue();
-        assertThat(tableExists(integrationJdbcTemplate, "INTERGRATION_APP", "INTEGRATION_SAMPLE")).isTrue();
+        assertThat(tableExists(integrationJdbcTemplate, "INTEGRATION_LIQUIBASE", "INTEGRATION_DATABASECHANGELOG")).isTrue();
+        assertThat(tableExists(integrationJdbcTemplate, "INTEGRATION_LIQUIBASE", "INTEGRATION_DATABASECHANGELOGLOCK")).isTrue();
+        assertThat(tableExists(integrationJdbcTemplate, "INTEGRATION_APP", "INTEGRATION_SAMPLE")).isTrue();
     }
 
     @Test
